@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Práctica formularios</title>
+</head>
+<body>
+    <h1>Práctica formularios</h1>
+    <section id="formulario1">
+        <h2>Formulario 1 - Registrarse en el club</h2>
+       <form>
+            <fieldset id="datos-personales">
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe aquí tu nombre" autofocus>
+                
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Escribe aquí tu apellido">
+                
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="16" max="100" placeholder="Escribe aquí tu edad">
+                
+                <p>Sexo:</p>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label><br>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label>
+                <br>
+                <label for="sentir-del-club">Me siento del club:</label>
+                <input type="checkbox" id="me-siento-del-club" name="me-siento-del-club" value="sí">
+                <br>
+                <label for="text-area">Escribe algo sobre tí:</label><br>
+                <textarea id="text-area" name="text-area" rows="5" cols="100" placeholder="Escribe aquí algo sobre tí:"></textarea>
+            </fieldset>
+            <fieldset id="datos-contacto">
+                <legend>Datos de contacto</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe aquí tu email">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Escribe aquí tu número de teléfono">
+            </fieldset>
+            <input type="reset" value="limpiar">
+
+            <input type="submit" value="enviar">
+       </form>
+    <section id="formulario2">
+        <h2>Formulario 2 - Registrar el robo de la bicicleta</h2>
+       <form>
+            <fieldset id="data">
+                <legend>Fecha</legend>
+                <label for="fecha">Día:</label>
+                <input type="date" id="fecha" name="fecha" autofocus>
+                
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+                </fieldset>
+            <fieldset id="info-bicicleta">
+                <legend>Información de la bicicleta</legend>
+                <label for="color">Color de la bicicleta:</label>
+                <input type="color" id="color" name="color">
+                <br>
+                <label for="rango-precio">Rango de precio:</label>
+                <input type="range" id="rango-precio" name="rango-precio" min="0" max="1000">
+                <br>
+                <label for="tipo-bicicleta">Tipo de bicicleta:</label>
+                <select id="tipo-bicicleta">
+                <optgroup label="urbana">
+                <option>Bicicleta clásica</option>
+                <option>Bicicleta plegable</option>
+                <option>Bicicleta eléctrica</option>
+                <option>Bicicleta commuter</option>
+                </optgroup>
+                <optgroup label="montana">
+                <option>Bicicletas de tipo sport</option>
+                <option>Bicicletas de tipo trail o hard trail</option>
+                <option>Bicicletas para XC o Cross Country</option>
+                </optgroup>
+                <optgroup label="carreras">
+                <option>Bicicletas gran fondo</option>
+                <option>Bicicletas racing</option>
+                <option>Bicicletas aero</option>
+                </optgroup>
+                <br>
+                <span>Accesorios:</span>
+                <input type="checkbox" name="accesorios" id="ruedines" value="ruedines">
+                <label for="ruedines">Ruedines</label>
+                <input type="checkbox" name="accesorios" id="hinchadores" value="hinchadores">
+                <label for="hinchadores">Hinchadores</label>
+                <input type="checkbox" name="accesorios" id="rodillos" value="rodillos">
+                <label for="rodillos">Rodillos</label>
+                <input type="checkbox" name="accesorios" id="bomba-aire" value="bomba-aire">
+                <label for="bomba-aire">Bomba de aire</label>
+                <input type="checkbox" name="accesorios" id="alforja" value="alforja">
+                <label for="alforja">Alforja</label>
+                <input type="checkbox" name="accesorios" id="silla-bebes" value="silla-bebes">
+                <label for="silla-bebes">Silla protabebes</label>
+                <br>
+                <label for="marca">¿Qué marca era?</label>
+                <select name="marca" id="marca">
+                <option value="specialized">Specialized</option>
+                <option value="trek">Trek</option>
+                <option value="merida">Merida</option>
+                <option value="scott">Scott</option>
+                <option value="giant">Giant</option>
+                <option value="cube">Cube</option>
+                <option value="lapierre">LaPierre</option>
+                <option value="orbea">Orbea</option>
+                <option value="cannondale">Cannondale</option>
+                <option value="bmc">BMC</option>
+                <option value="canyon">Canyon</option>
+                <option value="look">Look</option>
+                <option value="protek">Protek</option>
+                <option value="megamo">Megamo</option>
+                <option value="pinarello">Pinarello</option>
+                <option value="bianchi">Bianchi</option>
+                <option value="bh">BH</option>
+                <option value="factor">Factor</option>
+                <option value="ghost">Ghost</option>
+                <option value="cervelo">Cervélo</option>
+                <option value="argon">Argon</option>
+          </select>
+            </fieldset>
+            <input type="reset" value="limpiar">
+
+            <input type="submit" value="enviar">
+       </form>
+
+</body>
+</html>
